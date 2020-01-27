@@ -21,6 +21,27 @@
       </header>
 
       <main>
+        <form action="https://echo.htmlacademy.ru/courses" method="get">
+          <fieldset class="structure">
+            <legend>Инфраструктура</legend>
+            <p><label for="pool"><input type="checkbox" checked name="checkpool" id="pool">бассейн</input></label></p>
+            <p><label for="park"><input type="checkbox" name="checkpark" id="park">парковка</input></label></p>
+            <p><label for="wifi"><input type="checkbox" name="checkwi-fi" id="wifi">wi-fi</input></label></p>
+          </fieldset>
+
+          <fieldset class="house_type">
+            <legend>Тип жилья</legend>
+            <p><label for="hotel"><input type="checkbox" checked name="checkhotel" id="hotel" checked>гостиницы</label></p>
+            <p><label for="motel"><input type="checkbox" name="checkmotel" id="motel" checked>мотели</input></label></p>
+            <p><label for="apartments"><input type="checkbox" name="checkaprtm" id="apartments" checked>апартаменты</input></label></p>
+          </fieldset>
+
+          <fieldset class="price_slider">
+            <legend>Стоимость в сутки (р):</legend>
+            <input type="range" min="0" max="3000" step="1" id="slider" name="pricer">
+            <button type="button" name="button">Показать</button>
+          </fieldset>
+        </form>
         <section>
           <h2 class="hidden"></h2>
           <div class="sort">
