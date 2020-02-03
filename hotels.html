@@ -8,7 +8,7 @@
 
     <header>
       <a href="index.html">
-      <img src="img/logo.png" width="140px" height="72px" alt="Логотип меню">
+      <img src="img/sedona_logo.svg" width="140px" height="72px" alt="Логотип меню">
       </a>
       <nav>
         <ul>
@@ -21,7 +21,7 @@
       </header>
 
       <main>
-        <form action="https://echo.htmlacademy.ru/courses" method="get">
+        <form action="https://echo.htmlacademy.ru/courses">
           <fieldset class="structure">
             <legend>Инфраструктура</legend>
             <p><label for="pool"><input type="checkbox" checked name="checkpool" id="pool">бассейн</input></label></p>
@@ -43,31 +43,35 @@
           </fieldset>
         </form>
         <section>
-          <h2 class="hidden"></h2>
+          <h2 class="visually_hidden"></h2>
           <div class="sort">
             <span>НАЙДЕНО: 3</span>
             <ul>
+              <li>сортировка:</li>
               <li><a href="#">по цене</a></li>
               <li><a href="#">по типу</a></li>
               <li><a href="#">по рейтингу</a></li>
+              <li><img src="img/icon_down_dir.svg"></li>
+              <li><img src="img/icon_up_dir.svg"</li>
             </ul>
+
           </div>
           <article class="hotel_card">
-            <img src="img/hotel-picture.png" width="135" height="90" alt="Фото гостиницы">
+            <img src="img/amara.jpg" width="135" height="90" alt="Фото гостиницы">
             <h3>AMARA RESORT & SPA</h3>
             <span>ГОСТИНИЦА ОТ 4000 Р.</span>
             <a href="#">ПОДРОБНЕЕ</a>
             <button type="button" name="button">ЗАБРОНИРОВАТЬ</button>
           </article>
           <article class="hotel_card">
-            <img src="img/hotel-picture2.png" width="135" height="90" alt="Фото мотеля">
+            <img src="img/desert.jpg" width="135" height="90" alt="Фото мотеля">
             <h3>DESER QUAIL INN</h3>
             <span>МОТЕЛЬ ОТ 3000 Р.</span>
             <a href="#">ПОДРОБНЕЕ</a>
             <button type="button" name="button">ЗАБРОНИРОВАТЬ</button>
           </article>
           <article class="hotel_card">
-            <img src="img/hotel-picture3.png" width="135" height="90" alt="Фото апартаментов">
+            <img src="img/diablo.jpg" width="135" height="90" alt="Фото апартаментов">
             <h3>VILLAS AT POCO DIABLO</h3>
             <span>АПАРТАМЕНТЫ ОТ 2000 Р.</span>
             <a href="#">ПОДРОБНЕЕ</a>
@@ -78,12 +82,15 @@
 
       <footer>
         <section>
-          <h2 class="hidden"></h2>
+          <h2 class="visually_hidden">соцсети</h2>
           <span>#VISITSEDONA</span>
           <span>ТЕЛ: +7(495)6660266</span>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
+          <ul class="social">
+            <li><a href="">twitter</a></li>
+            <li><a href="">facebook</a></li>
+            <li><a href=""></a>youtube</li>
+          </ul>
+          <img src="img/htmlacademy.svg" class="html_academy" width="115" height="41">
         </section>
       </footer>
 

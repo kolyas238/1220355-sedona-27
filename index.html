@@ -7,7 +7,7 @@
   <body>
 
     <header>
-      <img src="img/index/logo.png" width="140px" height="72px" alt="Логотип">
+      <img src="img/sedona_logo.svg" width="140px" height="72px" alt="Логотип" tabindex="1">
       <nav>
         <ul>
           <li><a href="#">ИНФОРМАЦИЯ</a></li>
@@ -18,6 +18,7 @@
       </nav>
       <img src="img/welcome.svg" width="459px" height="353px" alt="Приветствие">
       <img src="img/index/background.jpg" width="1200px" height="800px" alt="">
+      <img src="img/polygon.png" alt="">
     </header>
 
   <main>
@@ -26,7 +27,7 @@
       <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
     </section>
     <section>
-      <h2 class="hidden">Предложения</h2>
+      <h2 class="visually_hidden">Предложения</h2>
       <div class="item_wrap">
         <div class="item_card">
           <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
@@ -34,7 +35,7 @@
             <p>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div>
         <div class="city_logo">
-          <img src="img/index/city.jpg" width="800px" height="256px" alt="фото города">
+          <img src="img/city.jpg" width="800px" height="256px" alt="фото города">
         </div>
       </div>
       <div class="item_wrap">
@@ -53,7 +54,7 @@
       </div>
       <div class="item_wrap">
         <div class="bridge_logo">
-          <img src="img/index/bridge.jpg" width="800px" height="256px" alt="фото моста дьявола">
+          <img src="img/bridge.jpg" width="800px" height="256px" alt="фото моста дьявола">
         </div>
         <div class="item_card">
           <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
@@ -79,22 +80,46 @@
           </div>
       </div>
     </section>
-    <h2 class="hidden"></h2>
+    <h2 class="visually_hidden"></h2>
       <div class="respond">
         <span>ЗАИНТЕРЕСОВАЛИСЬ?</span>
           <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
             <button type="button" name="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       </div>
+      <div class="search_hotel">
+      <form action="https://echo.htmlacademy.ru/courses">
+        <fieldset>
+          <legend></legend>
+          <div class="">
+
+          </div>
+          <label for="checkin_date">Дата заезда</label>
+          <input type="date" name="calendar" id="checkin_date">
+          </p>
+
+          <p>
+            <label for="checkout_date">Дата выезда</label>
+            <input type="date" name="calendar" id="checkout_date">
+          </p>
+          <span>Взрослые</span>
+          <span>Дети</span>
+          <input type="submit" name="submit" value="Найти">
+        </fieldset>
+        </div>
+
   </main>
 
     <footer>
       <section>
-        <h2 class="hidden">соцсети</h2>
+        <h2 class="visually_hidden">соцсети</h2>
         <span>#VISITSEDONA</span>
         <span>ТЕЛ: +7(495)6660266</span>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+        <ul class="social">
+          <li><a href="">twitter</a></li>
+          <li><a href="">facebook</a></li>
+          <li><a href=""></a>youtube</li>
+        </ul>
+        <img src="img/htmlacademy.svg" class="html_academy" width="115" height="41">
       </section>
     </footer>
   </body>
