@@ -3,36 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-    <header>
-      <img src="img/sedona_logo.svg" width="140px" height="72px" alt="Логотип" tabindex="1">
-      <nav>
-        <ul>
-          <li><a href="#">ИНФОРМАЦИЯ</a></li>
-          <li><a href="#">ФОТО И ВИДЕО</a></li>
-          <li><a href="#">КАРТА ШТАТА</a></li>
-          <li><a href="hotels.html">ГОСТИНИЦЫ</a></li>
+    <header class="header">
+      <nav class="nav_menu">
+        <ul class="nav_list">
+          <li class="nav_item"><a href="#">Информация</a></li>
+          <li class="nav_item"><a href="#">Фото и видео</a></li>
+          <li class="nav_item"><img class="logo" src="img/sedona_logo.svg" width="140px" height="72px" alt="Логотип" tabindex="1"></li>
+          <li class="nav_item"><a href="#">Карта штата</a></li>
+          <li class="nav_item"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
-      <img src="img/welcome.svg" width="459px" height="353px" alt="Приветствие">
-      <img src="img/index/background.jpg" width="1200px" height="800px" alt="">
-      <img src="img/polygon.png" alt="">
+      <img class="welcome" src="img/welcome.svg" width="459px" height="353px" alt="Приветствие">
+      <img class="decor_elem" src="img/polygon.png" alt="">
     </header>
 
   <main>
     <section class="intro">
-      <h1>СЕДОНА _ НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
-      <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+      <h1 class="title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <p>Рассмотрим пять причин, по которым Седона круче, чем Гранд Каньон!</p>
     </section>
-    <section>
+    <section class="advantages">
       <h2 class="visually_hidden">Предложения</h2>
       <div class="item_wrap">
-        <div class="item_card">
-          <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
+        <div class="item_card white_text">
+          <h3 class="card_title">Настоящий городок</h3>
             <span>-№1-</span>
-            <p>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="city_logo">
           <img src="img/city.jpg" width="800px" height="256px" alt="фото города">
@@ -40,55 +41,55 @@
       </div>
       <div class="item_wrap">
         <div class="item_card">
-          <h3>ЖИЛЬЁ</h3>
-            <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+          <h3 class="card_title">Жилье</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
         <div class="item_card">
-          <h3>ЕДА</h3>
-            <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+          <h3 class="card_title">Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
         <div class="item_card">
-          <h3>СУВЕНИРЫ</h3>
-            <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+          <h3 class="card_title">Сувениры</h3>
+            <p>Не только китайского, но и местного производства!</p>
         </div>
       </div>
       <div class="item_wrap">
         <div class="bridge_logo">
           <img src="img/bridge.jpg" width="800px" height="256px" alt="фото моста дьявола">
         </div>
-        <div class="item_card">
-          <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+        <div class="item_card white_text">
+          <h3 class="card_title">Там есть мост дьявола</h3>
             <span>-№2-</span>
-            <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+            <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
         </div>
       </div>
       <div class="item_wrap">
           <div class="item_card">
-            <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+            <h3 class="card_title">Небольшая площадь</h3>
               <span>-№3-</span>
-              <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+              <p>Все достопримечательности находятся очень близко</p>
           </div>
           <div class="item_card">
-            <h3>КРАСИВАЯ ДОРОГА</h3>
+            <h3 class="card_title">Красивая дорога</h3>
           <span>-№4-</span>
-          <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+          <p>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
           </div>
           <div class="item_card">
-            <h3>МАЛО ТУРИСТОВ</h3>
+            <h3 class="card_title">Мало туристов</h3>
               <span>-№5-</span>
-              <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+              <p>Большинство едет в Гранд Каньон и толпится там</p>
           </div>
       </div>
     </section>
     <h2 class="visually_hidden"></h2>
       <div class="respond">
-        <span>ЗАИНТЕРЕСОВАЛИСЬ?</span>
-          <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-            <button type="button" name="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <span class="respond_head">Заинтересовались?</span>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <button class="button" type="button" name="button">Поиск гостиницы в Седоне</button>
       </div>
       <div class="search_hotel">
-      <form action="https://echo.htmlacademy.ru/courses">
-        <fieldset>
+      <form class="search" action="https://echo.htmlacademy.ru/courses">
+        <fieldset class="booking">
           <legend></legend>
           <label for="checkin_date">Дата заезда</label>
           <input type="date" name="calendar" id="checkin_date">
@@ -101,24 +102,37 @@
 
           <span>Взрослые</span>
           <span>Дети</span>
-          <input type="submit" name="submit" value="Найти">
+          <input class="find_button" type="submit" name="submit" value="Найти">
         </fieldset>
         </div>
 
   </main>
 
-    <footer>
-      <section>
+    <footer class="footer">
+      <section class="footer_menu">
         <h2 class="visually_hidden">соцсети</h2>
         <span>#VISITSEDONA</span>
         <span>ТЕЛ: +7(495)6660266</span>
         <ul class="social">
-          <li><a href="">twitter</a></li>
-          <li><a href="">facebook</a></li>
-          <li><a href="">youtube</a></li>
+          <li class="icon_back">
+            <a href="#">
+              <img src="img/tw_icon.svg" width="17" height="15" alt="">
+            </a>
+          </li>
+          <li class="icon_back">
+            <a href="#">
+              <img src="img/fb_icon.svg" alt="">
+            </a>
+          </li>
+          <li class="icon_back">
+            <a href="#">
+              <img src="youtube_icon.svg" alt="">
+            </a>
+          </li>
         </ul>
         <img src="img/htmlacademy.svg" class="html_academy" width="115" height="41">
       </section>
     </footer>
+
   </body>
 </html>
