@@ -25,21 +25,23 @@
         <form class="search_form" action="https://echo.htmlacademy.ru/courses">
           <fieldset class="structure">
             <legend>Инфраструктура</legend>
-            <p><label for="pool"><input type="checkbox" checked name="checkpool" id="pool">бассейн</input></label></p>
-            <p><label for="park"><input type="checkbox" name="checkpark" id="park">парковка</input></label></p>
-            <p><label for="wifi"><input type="checkbox" name="checkwi-fi" id="wifi">wi-fi</input></label></p>
+              <label><input type="checkbox" checked name="checkpool">бассейн</input></label>
+              <label><input type="checkbox" name="checkpark">парковка</input></label>
+              <label><input type="checkbox" name="checkwi-fi">wi-fi</input></label>
           </fieldset>
 
           <fieldset class="house_type">
             <legend>Тип жилья</legend>
-            <p><label for="hotel"><input type="checkbox" checked name="checkhotel" id="hotel" checked>гостиницы</label></p>
-            <p><label for="motel"><input type="checkbox" name="checkmotel" id="motel" checked>мотели</input></label></p>
-            <p><label for="apartments"><input type="checkbox" name="checkaprtm" id="apartments" checked>апартаменты</input></label></p>
+            <label><input type="checkbox" checked name="checkhotel" checked>гостиницы</label>>
+            <label><input type="checkbox" name="checkmotel" checked>мотели</input></label>
+            <label><input type="checkbox" name="checkaprtm" checked>апартаменты</input></label>
           </fieldset>
 
           <fieldset class="price_slider">
             <legend>Стоимость в сутки (р):</legend>
-            <input type="range" min="0" max="3000" step="1" id="slider" name="pricer">
+            <input type="range" min="0" max="3000" step="1" name="pricer">
+            <input type="text" name="min_price" value="">
+            <input type="text" name="max-price" value="">
             <button type="button" name="button">Показать</button>
           </fieldset>
         </form>

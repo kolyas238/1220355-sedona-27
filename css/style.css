@@ -1,15 +1,13 @@
 body {
   margin: 0 auto;
-  padding: 0px;
-  font-family: 'PT Sans', Arial, sans-serif;
+  padding: 0;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;'
+  text-transform: uppercase;
   text-align: center;
-  width: 1200px;
   box-sizing: border-box;
-  background-image: url("../img/background.jpg");
   background-position: top;
   background-repeat: no-repeat;
 }
@@ -17,11 +15,77 @@ body {
 a {
   text-decoration: none;
   color: #000000;
+}
+
+.wrapper {
+  width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nav_list {
+  display: flex;
+  list-style: none;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_item {
+  padding: 22px;
+  width: 250px;
+}
+
+.intro {
+  background-image: url('../img/polygon.png'), url('../img/background.jpg');
+  background-position: -1px 456px, 0 0;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 0;
+}
+
+
+
+
+.logo {
+  position: absolute;
+  margin-left: -68px;
+}
+
+.welcome {
+  margin-top: 76px;
+}
+
+.mini_wrap {
+  margin-top: 79px;
+  background-color: #ffffff;
+  padding-top: 61px;
+  padding-bottom: 56px;
+}
+
+
+
+.cards_list {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 
 }
 
+.card {
+  height: 256px;
+  width: 400px;
+}
+
+
+
 .hotels_page {
-  background-image: url("../img/filter_background.jpg");
+  background-image: url('../img/filter_background.jpg');
 }
 
 .sort_list {
@@ -35,24 +99,17 @@ a {
 }
 
 .header {
-  width: 1200px;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
-.intro {
-  text-align: center;
-  width: 100%;
-  height: 216px;
-  background-color: #fff;
-  margin-top: 0px;
 
-}
 
 .visually_hidden {
-  visibility: hidden;
-  margin: 0;
-  padding: 0;
-
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .card_title {
@@ -68,8 +125,7 @@ a {
   line-height: 36px;
 }
 
-.search
-.button {
+.search .button {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -102,8 +158,7 @@ font-weight: 800;
 line-height: 26px;
 
 }
-.respond
-.button  {
+.respond .button  {
   font-size: 21px;
   font-weight: bold ;
   text-transform: uppercase;
