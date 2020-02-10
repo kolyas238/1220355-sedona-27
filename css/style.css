@@ -17,7 +17,7 @@ a {
   color: #000000;
 }
 
-.wrapper {
+.wrapper, .wrapper_hotels {
   width: 1200px;
   text-align: center;
   margin: 0 auto;
@@ -34,6 +34,7 @@ a {
 .nav_item {
   padding: 22px;
   width: 250px;
+  background-color: white;
 }
 
 .intro {
@@ -44,6 +45,17 @@ a {
   width: 100%;
   background-color: #ffffff;
   margin-top: 0;
+}
+
+
+.intro p:first-of-type {
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 26px;
+  display: block;
+  width: 440px;
+  margin-left: 380px;
+  margin-bottom: 38px;
 }
 
 
@@ -84,14 +96,40 @@ a {
 
 
 
-.hotels_page {
+.wrapper_hotels {
   background-image: url('../img/filter_background.jpg');
 }
 
 .sort_list {
+  display:flex;
+  list-style: none;
   font-size: 12px;
   line-height: 18px;
+  margin: 0;
+  padding: 0;
 }
+
+
+.sort_list_item1 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 800;
+  margin-left: 72px;
+}
+
+.sort_list_item2 {
+  margin-left: 49px;
+}
+
+.sort_list_item3 {
+  margin-left: 40px;
+}
+
+.sort_list_item4, .sort_list_item5 {
+  margin-left: 33px;
+}
+
+
 
 .hotel_head {
   line-height: 26px;
@@ -184,7 +222,7 @@ line-height: 26px;
 
 .search_form {
   color: white;
-  height: 217px
+  margin-bottom: 31px;
 }
 
 .icon_back {

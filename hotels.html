@@ -2,23 +2,25 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона отели</title>
+    <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="hotels_page">
 
-    <header class="header">
-      <nav class="nav_menu">
-        <ul class="nav_list clearfix">
-          <li class="nav_item"><a href="#">Информация</a></li>
-          <li class="nav_item"><a href="#">Фото и видео</a></li>
-          <li class="nav_item empty_item"><a href="index.html"><img class="logo" src="img/sedona_logo.svg" width="140px" height="72px" alt="Логотип" tabindex="1"></a></li>
-          <li class="nav_item"><a href="#">Карта штата</a></li>
-          <li class="nav_item"><a href="hotels.html">Гостиницы</a></li>
-        </ul>
-      </nav>
+  <body>
+    <div class="wrapper_hotels">
+      <header class="header">
+        <a href="index.html"><img class="logo" src="img/sedona_logo.svg" width="140px" height="72px" alt="Логотип" tabindex="1"></a>
+        <nav class="nav_menu">
+          <ul class="nav_list">
+            <li class="nav_item"><a href="#">Информация</a></li>
+            <li class="nav_item"><a href="#">Фото и видео</a></li>
+            <li class="nav_item"></li>
+            <li class="nav_item"><a href="#">Карта штата</a></li>
+            <li class="nav_item"><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </nav>
       </header>
 
       <main>
@@ -47,18 +49,16 @@
         </form>
         <section>
           <h2 class="visually_hidden"></h2>
-          <div class="sort_wrap">
-            <ul class="sort_list_">
-              <li class="sort_list_item"><span>Найдено: 3</span></li>
-              <li class="sort_list_item">сортировка:</li>
-              <li class="sort_list_item"><a href="#">по цене</a></li>
-              <li class="sort_list_item"><a href="#">по типу</a></li>
-              <li class="sort_list_item"><a href="#">по рейтингу</a></li>
-              <li class="sort_list_item"><img src="img/icon_down_dir.svg"></li>
-              <li class="sort_list_item"><img src="img/icon_up_dir.svg"</li>
+            <ul class="sort_list">
+              <li class="sort_list_item1"><span>Найдено: 3</span></li>
+              <li class="sort_list_item2">сортировка:</li>
+              <li class="sort_list_item3"><a class="sort_link" href="#">по цене</a></li>
+              <li class="sort_list_item4"><a class="sort_link" href="#">по типу</a></li>
+              <li class="sort_list_item5"><a class="sort_link" href="#">по рейтингу</a></li>
+              <li class="sort_list_item6"><img src="img/icon_down_dir.svg"></li>
+              <li class="sort_list_item7"><img src="img/icon_up_dir.svg"</li>
             </ul>
 
-          </div>
           <div class="results_wrap">
           <article class="hotel_card">
             <img src="img/amara.jpg" width="135" height="90" alt="Фото гостиницы">
