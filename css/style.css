@@ -21,6 +21,11 @@ a {
   width: 1200px;
   text-align: center;
   margin: 0 auto;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.wrapper {
+  position: relative;
 }
 
 .nav_list {
@@ -32,19 +37,21 @@ a {
 }
 
 .nav_item {
-  padding: 22px;
+  padding: 18px;
   width: 250px;
   background-color: white;
 }
 
 .intro {
   background-image: url('../img/polygon.png'), url('../img/background.jpg');
-  background-position: -1px 456px, 0 0;
+  background-position: -1px 456px, 0 -56px;
   background-repeat: no-repeat;
   text-align: center;
   width: 100%;
+  min-height: 216px;
   background-color: #ffffff;
   margin-top: 0;
+  box-sizing: border-box;
 }
 
 
@@ -63,7 +70,7 @@ a {
 
 .logo {
   position: absolute;
-  margin-left: -68px;
+  margin-left: -69px;
 }
 
 .welcome {
@@ -89,11 +96,59 @@ a {
 
 }
 
+
 .card {
   width: 400px;
+
 }
 
+.card_title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  margin-top: 0;
+}
 
+.white_text {
+  color: #ffffff;
+  background-color: #81b3d2;
+  padding-top: 46px;
+}
+
+.city_logo img, .bridge_logo img {
+  display: block;
+}
+
+.cards_list li:nth-child(n+3):nth-child(-n+5) {
+  min-height: 330px;
+  padding-top: 161px;
+  box-sizing: border-box;
+}
+
+.house {
+  background-image: url('../img/icon_1.svg');
+  background-repeat: no-repeat;
+  background-position: 162px 60px;
+}
+
+.food {
+  background-image: url('../img/icon_3.svg');
+  background-repeat: no-repeat;
+  background-position: 163px 60px;
+}
+
+.gifts {
+  background-image: url('../img/icon_2.svg');
+  background-repeat: no-repeat;
+  background-position: 168px 60px;
+}
+
+.cards_list li:nth-child(n+8):nth-child(-n+10) {
+  min-height: 256px;
+  padding-top: 50px;
+  box-sizing: border-box;
+  background-color: #eee;
+}
 
 .wrapper_hotels {
   background-image: url('../img/filter_background.jpg');
@@ -148,12 +203,7 @@ a {
   margin: -1px;
 }
 
-.card_title {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 21px;
-  padding-top: 46px;
-}
+
 
 
 .search .button {
@@ -162,11 +212,7 @@ a {
   line-height: 26px;
 }
 
-.white_text {
-  color: #ffffff;
-  background-color: #81b3d2;
-  padding-bottom: 64px;
-}
+
 
 
 .advantages {
@@ -202,6 +248,7 @@ a {
   padding-left: 72px;
 
 }
+
 
 
 
@@ -329,6 +376,14 @@ a {
   display: flex;
   padding-top: 36px;
   padding-bottom: 36px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  width: 1200px;
+  opacity: 0.9;
 }
 
 .contacts {
@@ -643,4 +698,256 @@ a {
 
 .developer:active path {
   fill: #bdbbbc;
+}
+
+
+.offers {
+  min-height: 291px;
+  position: relative;
+  padding-top: 57px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+
+
+.offers h2 {
+  margin-top: 0;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+
+
+
+.sedona_hotel_search {
+  display: inline-block;
+  position: absolute;
+  left: 316px;
+  bottom: 0;
+  width: 568px;
+  height: 86px;
+  font-size: 21px;
+  font-weight: 800;
+  background-color: #766357;
+  color: white;
+  border: none;
+  vertical-align: middle;
+  padding-top: 35px;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+/* popup */
+
+
+
+.booking {
+  width: 568px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.form_container {
+  width: 568px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 55px;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+}
+
+.checkin_date, .checkout_date {
+  width: 286px;
+  height: 38px;
+  padding-left: 15px;
+  padding-right: 45px;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background-color: #eee;
+}
+.checkin, .checkout {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 458px;
+  height: 38px;
+  margin-bottom: 29px;
+}
+.checkin label, .checkout label {
+  width: 95px;
+  display: block;
+  margin-right: 17px;
+}
+.date {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background-image: url('../img/calendar.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.qty {
+  display: flex;
+  width: 458px;
+  height: 38px;
+  justify-content: space-between;
+  margin-bottom: 54px;
+}
+
+.adult, .kids {
+  display: flex;
+  align-items: center;
+}
+
+.adult label, .kids label {
+  display: block;
+  margin-right: 41px;
+}
+
+.kids label {
+  margin-right: 27px;
+}
+
+.minus, .plus {
+  width: 38px;
+  height: 38px;
+  border: none;
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+
+.adult_qty, .kids_qty {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: none;
+  background-color: #eee;
+  text-align: center;
+}
+
+.minus::before {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 3px;
+  left: 50px;
+  top: 0px;
+  background-color: #a9a9a9;
+  top: 45%;
+  left: 38%;
+}
+
+.plus::before {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 3px;
+  left: 50px;
+  top: 0px;
+  background-color: #a9a9a9;
+  top: 45%;
+  left: 38%;
+  transform: rotate(90deg);
+}
+
+.plus::after {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 3px;
+  left: 50px;
+  top: 0px;
+  background-color: #a9a9a9;
+  top: 45%;
+  left: 38%;
+}
+
+
+.find_button {
+  display: block;
+  width: 458px;
+  height: 58px;
+  background-color: #81b3d2;
+  border: none;
+  color: white;
+  text-transform: inherit;
+  font-weight: inherit;
+}
+
+
+/* map */
+
+.map {
+}
+
+/* modal */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(115px);
+  }
+
+  90% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(115px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(0,117px);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-10px,117px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(10px,117px);
+  }
+}
+
+
+
+.modal_search {
+  display: block;
+  animation: bounce 0.6s;
+
+}
+
+.modal_error {
+  animation: shake 0.6s;
+}
+
+.modal_hide {
+  display: none;
 }
