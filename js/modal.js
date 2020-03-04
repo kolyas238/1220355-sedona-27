@@ -17,6 +17,10 @@
   isStorageSupport = false;
   }
 
+  if (popup) {
+    popup.classList.add("modal_hide");
+  }
+
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal_error");
@@ -36,9 +40,8 @@ if (!datein.value || !dateout.value) {
    popup.classList.remove("modal_error");
    popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal_error");
-  } else {
+  }
     if (isStorageSupport) {
       localStorage.setItem("datein", datein.value);
-    }
   }
   });
