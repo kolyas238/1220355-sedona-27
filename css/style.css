@@ -51,11 +51,11 @@ a {
 
 .intro {
   background-image: url('../img/polygon.png'), url('../img/background.jpg');
+  background-color: #3e74a3;
   background-position: -1px 450px, 0 -56px;
   background-repeat: no-repeat;
   text-align: center;
   width: 100%;
-  background-color: #ffffff;
   margin-top: 0;
   box-sizing: border-box;
 }
@@ -126,6 +126,7 @@ a {
 
 .city_logo img, .bridge_logo img {
   display: block;
+  background-color: #6c5c5d;
 }
 
 .cards_list li:nth-child(n+3):nth-child(-n+5) {
@@ -287,7 +288,9 @@ padding-top: 10px;
   box-sizing: border-box;
 }
 
-
+.hotel_card img {
+  background-color: #dca89a;
+}
 
 
 .description {
@@ -489,8 +492,6 @@ padding-top: 10px;
   color: white;
   padding-bottom: 24px;
   display: flex;
-
-
 }
 
 .search_form fieldset {
@@ -584,12 +585,9 @@ padding-top: 10px;
 
 .price-controls {
   position: relative;
-
   height: 31px;
   margin-bottom: 20px;
-
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -609,11 +607,9 @@ padding-top: 10px;
 
 .price-controls label {
   display: inline-block;
-
   font-size: 14px;
   line-height: 33px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
@@ -631,40 +627,34 @@ padding-top: 10px;
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
+  line-height: 100%;
   background: none;
   border: none;
 }
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -688,12 +678,10 @@ padding-top: 10px;
   display: block;
   margin: 0 auto;
   padding: 6px 35px;
-
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -1022,6 +1010,7 @@ padding-top: 10px;
 
 .map_wrap {
   position: relative;
+  background-color: #77a88c;
 }
 
 .map {
