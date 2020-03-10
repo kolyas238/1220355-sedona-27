@@ -87,9 +87,7 @@ a {
   min-height: 216px;
   margin-top: 73px;
   background-color: #ffffff;
-  /* padding-top: 40px; */
   padding-bottom: 0;
-
 }
 
 .cards_list {
@@ -168,7 +166,6 @@ padding-top: 10px;
   background-image: url('../img/filter_background.jpg');
   background-repeat: no-repeat;
   background-position: left 0 top -235px;
-
 }
 
 .results {
@@ -252,9 +249,6 @@ padding-top: 10px;
   line-height: 26px;
 }
 
-
-
-
 .advantages {
   text-align: center;
 }
@@ -276,9 +270,6 @@ padding-top: 10px;
   border: none;
 }
 
-
-
-
 .hotel_card {
   width: 1200px;
   display: flex;
@@ -291,7 +282,6 @@ padding-top: 10px;
 .hotel_card img {
   background-color: #dca89a;
 }
-
 
 .description {
   display: flex;
@@ -356,13 +346,11 @@ padding-top: 10px;
   color: white;
 }
 
-
 .rating {
   margin-left: 522px;
   position: relative;
   width: 110px;
 }
-
 
 .stars_amara {
   width: 85px;
@@ -383,6 +371,7 @@ padding-top: 10px;
   right: 0;
   position: absolute;
 }
+
 .stars_diablo {
   width: 42px;
   height: 27px;
@@ -405,12 +394,10 @@ padding-top: 10px;
   width: 110px;
 }
 
-
 .icon_back {
   background-color: #81b3d2;
   width: 46px;
   height: 48px;
-
 }
 
 
@@ -456,7 +443,6 @@ padding-top: 10px;
   padding: 0;
   list-style: none;
   justify-content: space-between;
-
 }
 
 .icon_back {
@@ -477,14 +463,12 @@ padding-top: 10px;
 
 .yt_icon {
   margin-top: 16px;
-
 }
 
 .developer {
   margin-left: 310px;
   padding-top: 4px;
 }
-
 
 /* Form */
 
@@ -561,10 +545,8 @@ padding-top: 10px;
 }
 
 .filter_option input[type="checkbox"]:focus + label::before {
-    outline: rgb(0, 0, 0) solid 1px;
+  outline: rgb(0, 0, 0) solid 1px;
 }
-
-
 
 /* Double range */
 .filter-range {
@@ -597,10 +579,8 @@ padding-top: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
@@ -691,7 +671,6 @@ padding-top: 10px;
 .btn-transparent:hover,
 .btn-transparent:focus {
   color: #000000;
-
   background: #ffffff;
 }
 
@@ -805,7 +784,6 @@ padding-top: 10px;
     background-color: #81B3D2;
 }
 
-
 .offers {
   min-height: 291px;
   position: relative;
@@ -813,8 +791,6 @@ padding-top: 10px;
   box-sizing: border-box;
   z-index: 2;
 }
-
-
 
 .offers h2 {
   margin-top: 0;
@@ -825,9 +801,6 @@ padding-top: 10px;
 .offers p {
   line-height: 24px;
 }
-
-
-
 
 .sedona_hotel_search {
   display: inline-block;
@@ -848,8 +821,6 @@ padding-top: 10px;
 }
 
 /* popup */
-
-
 
 .booking {
   width: 568px;
@@ -877,7 +848,6 @@ padding-top: 10px;
   height: 38px;
   padding-left: 15px;
   padding-right: 45px;
-
   position: absolute;
   right: 0;
   top: 0;
@@ -886,10 +856,10 @@ padding-top: 10px;
 }
 
 .form_container input[type="text"]::placeholder {
-    color: #000000;
-    font-size: 14px;
-    font-weight: 800;
-    text-transform: uppercase;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
   }
 
 .checkin, .checkout {
@@ -949,7 +919,6 @@ padding-top: 10px;
   position: relative;
 }
 
-
 .adult_qty, .kids_qty {
   width: 38px;
   height: 38px;
@@ -992,7 +961,6 @@ padding-top: 10px;
   left: 38%;
 }
 
-
 .find_button {
   display: block;
   width: 458px;
@@ -1005,7 +973,6 @@ padding-top: 10px;
   font-weight: inherit;
 }
 
-
 /* map */
 
 .map_wrap {
@@ -1017,7 +984,6 @@ padding-top: 10px;
   position: absolute;
   top: 0;
   left: 0;
-
 }
 
 /* modal */
