@@ -3,8 +3,8 @@
 
   var popup = document.querySelector(".modal_search");
   var form = popup.querySelector("form");
-  var datein = popup.querySelector("[name=datein]");
-  var dateout = popup.querySelector("[name=dateout]");
+  var dateIn = popup.querySelector("[name=datein]");
+  var dateOut = popup.querySelector("[name=dateout]");
 
   var storage = localStorage.getItem("datein");
 
@@ -25,23 +25,23 @@
     evt.preventDefault();
     popup.classList.remove("modal_error");
     popup.classList.toggle("modal_hide");
-    datein.focus();
+    dateIn.focus();
     if (storage) {
-      datein.value = storage;
-      dateout.focus();
+      dateIn.value = storage;
+      dateOut.focus();
     } else {
-      datein.focus();
+      dateIn.focus();
     }
   });
 
   form.addEventListener("submit", function (evt) {
-if (!datein.value || !dateout.value) {
+if (!dateIn.value || !dateOut.value) {
    evt.preventDefault();
    popup.classList.remove("modal_error");
    popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal_error");
   }
     if (isStorageSupport) {
-      localStorage.setItem("datein", datein.value);
+      localStorage.setItem("datein", dateIn.value);
   }
   });
